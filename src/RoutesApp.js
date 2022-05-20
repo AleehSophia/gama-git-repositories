@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from "./Home";
-import Repositories from "./Repositories";
+import Home from "./pages/Home";
+import Repositories from "./pages/Repositories";
 
-export default function routes() {
+export default function RoutesApp() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/repositories" element={Repositories} />
+        <Route path="/repositories" element={<Repositories/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,10 @@
-import Routes from "./routes";
+import RoutesApp from './RoutesApp';
+import './style.css';
 
 function App() {
 
   return (
-    <Routes /> 
+    <RoutesApp />
   );
 }
 
