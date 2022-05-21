@@ -11,7 +11,7 @@ export default function Repositories() {
       if(repositoriesName !== null) {
         repositoriesName = JSON.parse(repositoriesName);
         setRepositories(repositoriesName);
-        localStorage.clear();
+//        localStorage.clear();
       } else {
         navigate('/')
       }
@@ -23,7 +23,7 @@ export default function Repositories() {
         <S.List>
           { repositories.map(repository => {
             return (
-              <S.ListItem>Repositório: { <repository/> }</S.ListItem>
+              <S.ListItem>Repositório: { repository }</S.ListItem>
             )
           }) }
         </S.List>
